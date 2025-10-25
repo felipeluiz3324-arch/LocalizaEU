@@ -1,0 +1,19 @@
+Pseudo Código Resumido
+
+// Singleton
+class MapAPIConfig { ... }
+
+// Repository
+interface LocalRepository { ... }
+class LocalRepositoryDB implements LocalRepository { ... }
+
+// Strategy
+interface RecomendacaoStrategy { ... }
+class RecomendacaoPorDistancia implements RecomendacaoStrategy { ... }
+class RecomendacaoPorPreco implements RecomendacaoStrategy { ... }
+
+MotorRecomendacao strategy
+strategy.setStrategy(RecomendacaoPorDistancia)
+strategy.gerarRecomendacao(locais, usuario)
+
+
